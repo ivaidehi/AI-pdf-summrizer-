@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>PDF Summarizer AI</title>
+            <link rel="stylesheet" href="styles.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+      </head>
+
+      <body>
+            <div class="container">
+                  <h1>PDF Summarizer AI</h1>
+                  <div class="upload-container">
+                        <label for="pdfInput" class="upload-box">
+                              <img src="image.png" alt="Upload Icon" class="upload-icon">
+                              <p>Choose a file or drag & drop it here</p>
+                              <span>PDF format only</span>
+                              <button type="button" class="browse-btn">Browse File</button>
+                        </label>
+                        <input type="file" id="pdfInput" accept="application/pdf">
+                  </div> <br><br>
+
+                  <button id="extractBtn">Extract & Summarize</button> <br> <br>
+
+                  <h2>Summarized PDF content:</h2> <br>
+                  <div class="textarea-container">
+                        <textarea id="summaryText" rows="10" readonly></textarea>
+                        <div id="spinner" class="spinner"></div> <!-- Spinner here -->
+                  </div>
+            </div>
+            <script src="pdf.js"></script> <!-- PDF.js Library -->
+            <script src="script.js"></script>
+      </body>
+
+</html>
